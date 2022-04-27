@@ -9,9 +9,15 @@ body {
     max-width: 960px;
 }
 
-.flex-between {
+.row {
     display: flex;
     justify-content: space-between;
+    column-gap: 28;
+}
+
+.column {
+    min-width: 219px;
+    box-sizing: border-box;
 }
 
 .aic {
@@ -49,6 +55,11 @@ body {
 
 .menu a:hover {
     color: #fd8300;
+}
+
+.phones p,
+.messengers p {
+    padding-left: 48px;
 }
 
 .phones p,
@@ -98,5 +109,10 @@ body {
 }
 
 .proposition {
+    text-align: center;
     background: #19140f url(../img-rel/background.jpg);
+}
+
+.proposition p {
+    margin: 0;
 }
