@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.eot');
+    src: url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     margin: 0;
     font-family: "Arial", sans-serif;
@@ -13,6 +25,9 @@ hr {
     border-top: 1px solid #e4e4ec;
 }
 
+a {
+    position: relative;
+}
 
 .wrapper {
     margin: 0 auto;
@@ -77,6 +92,7 @@ hr {
 .social a {
     display: block;
     background: url(../img-rel/sprite.png) no-repeat;
+    transition: all .5s ease;
 }
 
 a.fb {
@@ -85,20 +101,27 @@ a.fb {
     background-position: 0 0;
 }
 
-a.tw {
-    width: 10px;
-    height: 19px;
-    background-position: -12 0;
+a.fb:hover {
+    background-position: 0 -20px;
 }
 
 a.in {
-    width: 18px;
-    height: 15px;
-    background-position: -33 0;
+    width: 19px;
+    height: 19px;
+    background-position: -12px 0;
 }
 
-.contact-info {
-    padding: 20px 0;
+a.in:hover {
+    background-position: -12px -20px;
+}
+
+a.tw {
+    width: 18px;
+    height: 17px;
+    background-position: -35px 0;
+}
+a.tw:hover {
+    background-position: -35px -20px;
 }
 
 .phones p,
@@ -111,10 +134,24 @@ a.in {
     margin: 10px 0;
 }
 
+.contact-info {
+    padding: 20px 0;
+}
+
 .phones a {
     font: bold 18px/24px Arial;
     color: #25252c;
     text-decoration: none;
+}
+
+.tel:before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    top: 2px;
+    width: 16px;
+    height: 17px;
+    background: url(../img-rel/sprite.png) no-repeat -53px 0;
 }
 
 .messengers a {
