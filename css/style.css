@@ -114,7 +114,7 @@ a.in:hover {
 
 a.tw {
     width: 18px;
-    height: 15px;
+    height: 17px;
     background-position: -33px 0;
 }
 
@@ -150,21 +150,34 @@ a.tw:hover {
 }
 
 .tel:before {
-    width: 16px;
+    width: 19px;
     height: 17px;
     background: url(../img-rel/sprite.png) no-repeat -53px 0;
 }
 
 .mail:before {
-    width: 17px;
-    height: 13px;
+    width: 22px;
+    height: 17px;
     background: url(../img-rel/sprite.png) no-repeat -71px 0;
 }
 
 .skype:before {
-    width: 18px;
-    height: 19px;
-    background: url(../img-rel/sprite.png) no-repeat -90px 0;
+    width: 20px;
+    height: 21px;
+    background: url(../img-rel/sprite.png) no-repeat -94px 0;
+}
+
+.stick {
+    position: relative;
+}
+
+.stick:before {
+    content: '';
+    position: absolute;
+    right: -18px;
+    width: 1px;
+    height: 51px;
+    background-color: #e4e4ec;
 }
 
 .messengers a {
@@ -274,7 +287,20 @@ p.prop-text {
 }
 
 .home {
+    position: relative;
     margin: 0;
+}
+
+.home a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home a:hover ~ h3 {
+    text-decoration: underline;
 }
 
 .home h3 {
@@ -296,9 +322,15 @@ p.prop-text {
     color: #9999a6;
 }
 
+.sidebar {
+    min-width: 219px;
+}
+
 .aside-menu {
     position: sticky;
     top: 35px;
+    border-radius: 3px;
+    overflow: hidden;
 }
 
 .aside-menu p {
@@ -306,7 +338,6 @@ p.prop-text {
     padding: 10px 15px;
     color: #fff;
     font: 700 16px/1.5em "Roboto Slab";
-    border-radius: 3px 3px 0 0;
     background-color: #1f1f56;
 }
 
@@ -324,12 +355,51 @@ p.prop-text {
     line-height: 24px;
     color: #25252c;
     background-color: #e4e4ec;
-    border-top: 1px solid #cdcddd;
+}
+
+.aside-muenu > ul > li + li > a {
+    border-top: 1px solid #cdcddd;    
+}
+
+.aside-menu > ul > li:hover > a {
+    color: #fff;
+    background-color: #fd8300;
+}
+
+.aside menu > ul > li > a:before {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 18px;
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transform: rotate(-45deg);
+    transition: all .5s ease;
+}
+
+.aside menu > ul > li:hover > a:before {
+    top: 16px;
+    border-color: #fff;
+    transform: rotate(45deg);
+} 
+
+.aside-menu li:hover .sub-menu {
+    display: block; 
+}
+
+.sub-menu {
+    display: none;
 }
 
 .sub-menu a {
     padding-left: 30px;
     color: #666;
+}
+
+.sub-menu a:hover {
+    background-color: #cecedd;
 }
 
 .footer {
