@@ -117,13 +117,13 @@ a.in:hover {
 }
 
 a.tw {
-    width: 18px;
-    height: 17px;
-    background-position: -33px 0;
+    width: 20px;
+    height: 20px;
+    background-position: -35px 0;
 }
 
 a.tw:hover {
-    background-position: -33px -21px;
+    background-position: -35px -21px;
 }
 
 .contact-info {
@@ -178,7 +178,7 @@ a.tw:hover {
 .stick:before {
     content: '';
     position: absolute;
-    right: -18px;
+    right: -43px;
     width: 1px;
     height: 51px;
     background-color: #e4e4ec;
