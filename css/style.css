@@ -118,7 +118,7 @@ a.in:hover {
 
 a.tw {
     width: 20px;
-    height: 20px;
+    height: 16px;
     background-position: -35px 0;
 }
 
@@ -178,9 +178,10 @@ a.tw:hover {
 .stick:before {
     content: '';
     position: absolute;
-    right: -43px;
+    top: 16px;
+    right: -22px;
     width: 1px;
-    height: 51px;
+    height: 49px;
     background-color: #e4e4ec;
 }
 
