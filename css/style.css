@@ -362,7 +362,7 @@ p.prop-text {
     background-color: #e4e4ec;
 }
 
-.aside-muenu > ul > li + li > a {
+.aside-menu > ul > li + li > a {
     border-top: 1px solid #cdcddd;    
 }
 
@@ -371,7 +371,7 @@ p.prop-text {
     background-color: #fd8300;
 }
 
-.aside menu > ul > li > a:before {
+.aside-menu > ul > li > a:before {
     content: '';
     position: absolute;
     right: 15px;
@@ -384,7 +384,7 @@ p.prop-text {
     transition: all .5s ease;
 }
 
-.aside menu > ul > li:hover > a:before {
+.aside-menu > ul > li:hover > a:before {
     top: 16px;
     border-color: #fff;
     transform: rotate(45deg);
